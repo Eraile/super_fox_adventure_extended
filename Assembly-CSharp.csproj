@@ -47,8 +47,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\FoxAdventures\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\FoxAdventures\Scripts\CharacterController2D.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_3_Movement\Scripts\CharacterController2D.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_3_Movement\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_5_Camera\Scripts\FollowTransform.cs" />
+     <None Include="Assets\FoxAdventures\Cours\Part_6_Animations\README.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

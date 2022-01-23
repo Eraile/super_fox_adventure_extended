@@ -368,9 +368,9 @@ GameObject:
   - component: {fileID: 1018979164}
   - component: {fileID: 1018979166}
   - component: {fileID: 1018979165}
-  - component: {fileID: 1018979167}
   - component: {fileID: 1018979169}
   - component: {fileID: 1018979168}
+  - component: {fileID: 1018979167}
   m_Layer: 31
   m_Name: Layer (Default)
   m_TagString: Untagged
@@ -15850,7 +15850,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 1
+  m_GeometryType: 0
   m_GenerationType: 1
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -16022,16 +16022,10 @@ CompositeCollider2D:
         Y: -20000000
       - X: 180000000
         Y: -20000000
-      - X: 160000094
-        Y: -29999953
-      - X: 160000041
-        Y: -29999900
-      - X: 149999959
-        Y: -29999900
-      - X: 149999900
-        Y: -29999959
-      - X: 149999900
-        Y: -30000100
+      - X: 160000000
+        Y: -30000000
+      - X: 150000000
+        Y: -30000000
       - X: 140000000
         Y: -40000000
       - X: 90000000
@@ -16140,8 +16134,8 @@ CompositeCollider2D:
       - {x: 22.999992, y: -2.8749924}
       - {x: 22.124989, y: -2}
       - {x: 17.999996, y: -2.0000029}
-      - {x: 15.999999, y: -2.99999}
-      - {x: 14.999983, y: -3.0000176}
+      - {x: 15.999993, y: -3}
+      - {x: 14.999992, y: -3.0000076}
       - {x: 13.999989, y: -4}
       - {x: 8.999993, y: -3.9999924}
       - {x: 6.999989, y: -2}
@@ -16195,7 +16189,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 0
 --- !u!1 &1139804090
 GameObject:
   m_ObjectHideFlags: 0
