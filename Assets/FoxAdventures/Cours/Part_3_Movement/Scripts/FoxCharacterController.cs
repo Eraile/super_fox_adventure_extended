@@ -1,0 +1,151 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D))]
+public class FoxCharacterController : MonoBehaviour
+{
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        // Etape 1 - Mouvement Horizontal
+        this.HandleHorizontalMove();
+
+        // Etape 2 - Flip Texture suivant orientation
+        this.HandleFlip();
+
+        // Etape 3 - Saut
+        this.HandleJump();
+    }
+
+    #region Etape 1 - Mouvement Horizontal
+    private Rigidbody2D __rigidbody2D = null;
+    public Rigidbody2D Rigidbody2D
+    {
+        get
+        {
+            if (this.__rigidbody2D == null)
+                this.__rigidbody2D = this.GetComponent<Rigidbody2D>();
+            return this.__rigidbody2D;
+        }
+    }
+
+    // Velocity
+    private Vector3 velocity = Vector3.zero;
+
+    [Header("Behaviour")]
+    [Range(0, .3f)]
+    public float moveSpeedFactor = 1.0f;
+
+    [Header("Input")]
+    [Range(-1f, 1f)]
+    public float horizontalInput = 0f;
+    public bool jump = false;
+    public bool crouch = false;
+
+    //
+    private void HandleHorizontalMove()
+    {
+        //// Etape 4 - Add conditions to the movement
+        //if (this.isGrounded == true || this.airControl == true)
+        {
+            // Move the character by finding the target velocity
+            Vector3 targetVelocity = new Vector2(this.horizontalInput * 10f, this.Rigidbody2D.velocity.y);
+            // And then smoothing it out and applying it to the character
+            this.Rigidbody2D.velocity = Vector3.SmoothDamp(this.Rigidbody2D.velocity, targetVelocity, ref velocity, this.moveSpeedFactor);
+        }
+    }
+    #endregion
+
+    #region Etape 2 - Flip Texture suivant orientation
+    private bool __FacingRight = true;
+
+    private void HandleFlip()
+    {
+        // If the input is moving the player right and the player is facing left...
+        if (this.horizontalInput > 0 && __FacingRight == false)
+        {
+            // Flip the player.
+            Flip();
+        }
+        // Otherwise if the input is moving the player left and the player is facing right...
+        else if (this.horizontalInput < 0 && __FacingRight == true)
+        {
+            // Flip the player.
+            Flip();
+        }
+    }
+
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        __FacingRight = !__FacingRight;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 invertedScale = transform.localScale;
+        invertedScale.x *= -1;
+
+        // Apply
+        transform.localScale = invertedScale;
+    }
+    #endregion
+
+    #region Etape 3 - Saut
+    [Header("Physics")]
+    // Origin of the physics check to see if we are grounded
+    [SerializeField] 
+    private Transform groundCheck = null;
+    // Radius of the overlap circle to determine if grounded
+    private const float k_GroundedRadius = 0.2f;
+    // LayerMask of ground for ground check
+    public LayerMask groundCheckLayers;
+    // Are we grounded ?
+    private bool isGrounded = false;
+
+    [Header("Jump")]
+    public float jumpForce = 400.0f;
+    
+    // Can you change direction in the air ?
+    public bool airControl = true;
+
+    private void HandleJump()
+    {
+        // Check values
+        if (this.groundCheck == null)
+            return;
+
+        // Update grounded status
+        {
+            // Unset flag
+            this.isGrounded = false;
+
+            // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
+            // This can be done using layers instead but Sample Assets will not overwrite your project settings.
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(this.groundCheck.position, k_GroundedRadius, groundCheckLayers);
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                if (colliders[i].gameObject != gameObject)
+                    isGrounded = true;
+            }
+        }
+
+        // If the player should jump
+        if (isGrounded == true)
+        {
+            // Did play request for a jump ?
+            if (jump == true)
+            {
+                // Unset flag
+                this.isGrounded = false;
+
+                // Add a vertical force to the player.
+                this.Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+
+                // Reset input
+                this.jump = false;
+            }
+        }
+    }
+    #endregion
+}
