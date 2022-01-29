@@ -73,8 +73,6 @@ GameObject:
   - component: {fileID: 1871240532537790300}
   - component: {fileID: 1871240532537790303}
   - component: {fileID: 1871240532537790296}
-  - component: {fileID: 1871240532537790298}
-  - component: {fileID: 1871240532537790297}
   - component: {fileID: 1871240532537790299}
   - component: {fileID: 1871240532537790308}
   m_Layer: 6
@@ -138,7 +136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -216,42 +214,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1871240532537790298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871240532537790291}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac07422f9fd265449af4c8ae395d789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 600
-  m_CrouchSpeed: 0
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 1
-  m_GroundCheck: {fileID: 1871240532338579748}
-  m_CeilingCheck: {fileID: 1871240532320425939}
-  m_CrouchDisableCollider: {fileID: 0}
---- !u!114 &1871240532537790297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871240532537790291}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f6aa2bc619a93047b2d909c24f9794e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1871240532537790298}
-  runSpeed: 40
 --- !u!114 &1871240532537790299
 MonoBehaviour:
   m_ObjectHideFlags: 0

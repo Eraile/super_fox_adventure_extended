@@ -35,8 +35,9 @@ public class FoxCharacterController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
 
     [Header("Behaviour")]
+    public float moveSpeedFactor = 10.0f;
     [Range(0, .3f)]
-    public float moveSpeedFactor = 1.0f;
+    public float moveDampFactor = 0.0f;
 
     [Header("Input")]
     [Range(-1f, 1f)]
@@ -51,9 +52,14 @@ public class FoxCharacterController : MonoBehaviour
         //if (this.isGrounded == true || this.airControl == true)
         {
             // Move the character by finding the target velocity
-            Vector3 targetVelocity = new Vector2(this.horizontalInput * 10f, this.Rigidbody2D.velocity.y);
+            Vector3 targetVelocity = new Vector2(this.horizontalInput * this.moveSpeedFactor, this.Rigidbody2D.velocity.y);
+
+            // Crouch movement
+            if (this.IsGrounded == true && this.crouch == true)
+                targetVelocity.x *= 0.5f;
+
             // And then smoothing it out and applying it to the character
-            this.Rigidbody2D.velocity = Vector3.SmoothDamp(this.Rigidbody2D.velocity, targetVelocity, ref velocity, this.moveSpeedFactor);
+            this.Rigidbody2D.velocity = Vector3.SmoothDamp(this.Rigidbody2D.velocity, targetVelocity, ref velocity, this.moveDampFactor);
         }
     }
     #endregion
@@ -101,7 +107,14 @@ public class FoxCharacterController : MonoBehaviour
     // LayerMask of ground for ground check
     public LayerMask groundCheckLayers;
     // Are we grounded ?
-    private bool isGrounded = false;
+    private bool __isGrounded = false;
+    public bool IsGrounded
+    {
+        get
+        {
+            return this.__isGrounded;
+        }
+    }
 
     [Header("Jump")]
     public float jumpForce = 400.0f;
@@ -118,7 +131,7 @@ public class FoxCharacterController : MonoBehaviour
         // Update grounded status
         {
             // Unset flag
-            this.isGrounded = false;
+            this.__isGrounded = false;
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -126,26 +139,29 @@ public class FoxCharacterController : MonoBehaviour
             for (int i = 0; i < colliders.Length; i++)
             {
                 if (colliders[i].gameObject != gameObject)
-                    isGrounded = true;
+                    __isGrounded = true;
             }
         }
 
         // If the player should jump
-        if (isGrounded == true)
+        if (__isGrounded == true)
         {
             // Did play request for a jump ?
             if (jump == true)
             {
                 // Unset flag
-                this.isGrounded = false;
+                this.__isGrounded = false;
 
                 // Add a vertical force to the player.
                 this.Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 
-                // Reset input
-                this.jump = false;
+                //// Reset input
+                //this.jump = false;
             }
         }
+
+        // Reset input
+        this.jump = false;
     }
     #endregion
 }

@@ -26,6 +26,6 @@ public class FoxCharacterControllerInput : MonoBehaviour
 			this.FoxCharacterController.jump = true;
 
 		// Crouch
-		this.FoxCharacterController.crouch = Input.GetKey(KeyCode.LeftControl);
+		this.FoxCharacterController.crouch = Input.GetAxisRaw("Vertical") < 0.0f; //Input.GetKey(KeyCode.LeftControl);
 	}
 }
