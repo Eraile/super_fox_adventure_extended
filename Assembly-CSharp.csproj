@@ -48,22 +48,22 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\FoxAdventures\Cours\EnCours\Script\PlayerCharacterController.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\UI\FoxCharacterDeathScreen.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\FoxCharacterKeyCount.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_6_Animations\Scripts\FoxCharacterMovementAnimation.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\Player\FoxCharacterHealth.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\DeathZone\DeathZone.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_10_Enemies\Scripts\EnemyDamageZone.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part_7_MovingPlatforms\Scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_10_Enemies\Scripts\Frog.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_10_Enemies\Scripts\HealthView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\Key.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\Player\FoxPlayer.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part_3_Movement\Scripts\FoxCharacterControllerInput.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part_3_Movement\Scripts\FoxCharacterController.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_5_Camera\Scripts\FollowTransform.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_6_Animations\Scripts\FoxCharacterMovementAnimation.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\Key.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\FoxCharacterInventory.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\FoxCharacterKeyCount.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\DoorKeyLock.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\Player\FoxCharacterHealth.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\UI\FoxCharacterDeathScreen.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\DeathZone\DeathZone.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_9_Death\Scripts\Player\FoxPlayer.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_10_Enemies\Scripts\Frog.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_10_Enemies\Scripts\EnemyDamageZone.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part_10_Enemies\Scripts\HealthView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_5_Camera\Scripts\FollowTransform.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part_8_Conditions\Scripts\FoxCharacterInventory.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
