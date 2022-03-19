@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/FoxAdventures/Menu/Scenes/Menu.unity
+    guid: 548efbe8196c7bb41a94d25d70cf82e6
+  - enabled: 1
+    path: Assets/FoxAdventures/Game/Scene/GameScene (Rework).unity
+    guid: 8117909b7d579db41b2556198cb4f7d0
   m_configObjects: {}
