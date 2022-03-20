@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/FoxAdventures/Menu/Scenes/Menu.unity
     guid: 548efbe8196c7bb41a94d25d70cf82e6
   - enabled: 1
-    path: Assets/FoxAdventures/Game/Scene/GameScene (Rework).unity
+    path: Assets/FoxAdventures/Game/Scene/GameScene.unity
     guid: 8117909b7d579db41b2556198cb4f7d0
   m_configObjects: {}

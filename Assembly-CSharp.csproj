@@ -48,29 +48,33 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\UI\FoxCharacterDeathScreen.cs" />
+     <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIJumpZone.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\WaypointFollower.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\UI\FoxCharacterKeyCount.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterMovementAnimation.cs" />
+     <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIStopZone.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\StickyMovingPlatform.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Health\Scripts\FoxCharacterHealth.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\DeathZone.cs" />
+     <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIHeadRightZone.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Enemies\Scripts\EnemyDamageZone.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\MovingPlatform.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Enemies\Scripts\Frog.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Health\Scripts\UI\HealthView.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\Key\Key.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Player\Scripts\FoxPlayer.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Utils\Lerp2D.cs" />
+     <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\StartGameButton.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterControllerInput.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterController.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\KeyLocked\DoorKeyLock.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Utils\FollowTransform.cs" />
-     <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\FoxCharacterInventory.cs" />
-     <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIStopZone.cs" />
-     <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIJumpZone.cs" />
-     <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIHeadRightZone.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIFoxCharacterControllerInput.cs" />
-     <Compile Include="Assets\FoxAdventures\Game\Components\Utils\Lerp2D.cs" />
-     <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\StickyMovingPlatform.cs" />
-     <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\WaypointFollower.cs" />
-     <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\StartGameButton.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\FoxCharacterInventory.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\UI\FoxCharacterJewelsCount.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\Jewels\Jewel.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Level\Win\Scripts\FoxCharacterWinScreen.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Level\Win\Scripts\WinZone.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -639,6 +643,9 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.IK.Runtime">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
@@ -657,41 +664,11 @@
  <Reference Include="PsdPlugin">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.IK.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Path.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.IK.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
@@ -699,20 +676,47 @@
  <Reference Include="Unity.2D.PixelPerfect.Editor">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Mathematics.Editor">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.IK.Editor">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Path.Editor">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Psdimporter.Editor">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEditorBridge.001">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
  <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics">
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

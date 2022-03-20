@@ -8,7 +8,11 @@ public class StickyMovingPlatform : MovingPlatform
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.transform.SetParent(transform);
+            FoxPlayer foxPlayer = collision.gameObject.transform.GetComponentInParent<FoxPlayer>();
+            if (foxPlayer != null)
+            {
+                foxPlayer.gameObject.transform.SetParent(transform);
+            }
         }
     }
 
@@ -16,7 +20,11 @@ public class StickyMovingPlatform : MovingPlatform
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.transform.SetParent(null);
+            FoxPlayer foxPlayer = collision.gameObject.transform.GetComponentInParent<FoxPlayer>();
+            if (foxPlayer != null)
+            {
+                foxPlayer.gameObject.transform.SetParent(null);
+            }
         }
     }
 }

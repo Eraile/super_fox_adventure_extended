@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FoxPlayer : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class FoxPlayer : MonoBehaviour
     #region Save Positions / Spawning
     // Vars
     private FoxCharacterController foxCharacterController = null;
+
     public FoxCharacterController FoxCharacterController
     {
         get
@@ -144,6 +146,35 @@ public class FoxPlayer : MonoBehaviour
                     // Reset the velocity
                     rigidbody2D.velocity = Vector2.zero;
                 }
+            }
+        }
+    }
+    #endregion
+
+    #region Win Level
+    public UnityEvent OnWin = new UnityEvent();
+    public virtual void Win()
+    {
+        // Invoke events
+        if (this.OnWin != null)
+            this.OnWin.Invoke();
+
+        // TODO: Move this somewhere else
+        {
+            // Deactivate fox character input
+            FoxCharacterControllerInput foxCharacterControllerInput = this.GetComponentInChildren<FoxCharacterControllerInput>();
+            if (foxCharacterControllerInput != null)
+            {
+                foxCharacterControllerInput.enabled = false;
+            }
+
+            // Reset data of Character Controller
+            FoxCharacterController foxCharacterController = this.GetComponentInChildren<FoxCharacterController>();
+            if (foxCharacterController != null)
+            {
+                foxCharacterController.horizontalInput = 0.0f;
+                foxCharacterController.jump = false;
+                foxCharacterController.crouch = false;
             }
         }
     }
