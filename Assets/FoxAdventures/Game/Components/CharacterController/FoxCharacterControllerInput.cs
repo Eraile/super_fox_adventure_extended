@@ -22,7 +22,7 @@ public class FoxCharacterControllerInput : MonoBehaviour
 		this.FoxCharacterController.horizontalInput = Input.GetAxisRaw("Horizontal");
 
 		// Jump
-		if (Input.GetKeyDown(KeyCode.Space) == true)
+		if (Input.GetKeyDown(KeyCode.Space) == true || Input.GetKeyDown(KeyCode.UpArrow) == true)
 			this.FoxCharacterController.jump = true;
 
 		// Crouch
