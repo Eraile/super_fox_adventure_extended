@@ -10,6 +10,9 @@ public class DoorKeyLock : MonoBehaviour
     // Flag
     private bool opened = false;
 
+    // Audio
+    public AudioSource openDoorAudioSource = null;
+
     void Start()
     {
         // Disable door to prevent it from moving
@@ -40,6 +43,10 @@ public class DoorKeyLock : MonoBehaviour
 
                 // Unset flag
                 this.opened = false;
+
+                // Audio - Play
+                if (this.openDoorAudioSource != null)
+                    this.openDoorAudioSource.Play();
 
                 // Delete key from scene (and prevent further use)
                 GameObject.Destroy(this.gameObject);

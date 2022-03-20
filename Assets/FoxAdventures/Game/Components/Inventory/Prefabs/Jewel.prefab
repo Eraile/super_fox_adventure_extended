@@ -142,3 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa086f685dd49047a8a6497f09b32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grabbedSoundFx: {fileID: 8846993215087501679, guid: 068968625a362b841833808d333814ea, type: 3}

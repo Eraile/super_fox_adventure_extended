@@ -7,6 +7,9 @@ public class Key : MonoBehaviour
     // Flag
     private bool canBeGrabbed = true;
 
+    // Audio - Prefab
+    public GameObject grabbedSoundFx = null;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         // Prevent potential issues
@@ -22,6 +25,10 @@ public class Key : MonoBehaviour
 
             // Unset flag
             this.canBeGrabbed = false;
+
+            // Play audio
+            if (this.grabbedSoundFx != null)
+                GameObject.Instantiate(this.grabbedSoundFx, null);
 
             // Delete key from scene (and prevent further use)
             GameObject.Destroy(this.gameObject);

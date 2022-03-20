@@ -122,6 +122,9 @@ public class FoxCharacterController : MonoBehaviour
     // Can you change direction in the air ?
     public bool airControl = true;
 
+    [Header("Jump - Audio")]
+    public AudioSource jumpAudioSource = null;
+
     private void HandleJump()
     {
         // Check values
@@ -154,6 +157,10 @@ public class FoxCharacterController : MonoBehaviour
 
                 // Add a vertical force to the player.
                 this.Rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+
+                // Play audio
+                if (this.jumpAudioSource != null)
+                    this.jumpAudioSource.Play();
 
                 //// Reset input
                 //this.jump = false;

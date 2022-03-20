@@ -5,6 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class DeathZone : MonoBehaviour
 {
+    private AudioSource deathAudioSource = null;
+    public AudioSource DeathAudioSource
+    {
+        get
+        {
+            if (this.deathAudioSource == null)
+                this.deathAudioSource = GetComponentInChildren<AudioSource>();
+            return this.deathAudioSource;
+        }
+    }
+
     //// Uncomment for autosetup on a new gameobject
     //void Awake()
     //{
@@ -21,6 +32,10 @@ public class DeathZone : MonoBehaviour
         {
             // Attribute key to inventory
             foxCharacterHealth.Kill();
+
+            // Play sound
+            if (this.DeathAudioSource != null)
+                this.DeathAudioSource.Play();
         }
     }
 
