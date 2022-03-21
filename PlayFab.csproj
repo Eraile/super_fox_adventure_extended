@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{18303CDF-618A-5B0D-4520-BDEF66ED0AAB}</ProjectGuid>
+    <ProjectGuid>{D6741CAF-1949-4F1D-3AC3-6834E971D497}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PlayFab</AssemblyName>
@@ -57,8 +57,8 @@
      <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Server\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerAPI.cs" />
-     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Groups\PlayFabGroupsModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabApiSettings.cs" />
      <Compile Include="Assets\PlayFabSDK\Data\PlayFabDataAPI.cs" />
@@ -72,9 +72,9 @@
      <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabMultiplayerAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Client\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\ISerializerPlugin.cs" />
-     <Compile Include="Assets\PlayFabSDK\Client\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabUnityHttp.cs" />
      <Compile Include="Assets\PlayFabSDK\Server\PlayFabServerModels.cs" />
@@ -86,9 +86,9 @@
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabWWW.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\Log.cs" />
+     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabErrors.cs" />
      <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsAPI.cs" />
-     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabWebRequest.cs" />
      <Compile Include="Assets\PlayFabSDK\Localization\PlayFabLocalizationInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Profiles\PlayFabProfilesInstanceAPI.cs" />
@@ -119,8 +119,8 @@
      <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabExperimentationModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginContractKey.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabDeviceUtil.cs" />
-     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\SimpleJson.cs" />
@@ -711,10 +711,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

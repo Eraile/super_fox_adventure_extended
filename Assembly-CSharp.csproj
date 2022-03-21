@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3BDBF377-6DCD-D127-A790-0EC77293684B}</ProjectGuid>
+    <ProjectGuid>{236A6082-DF70-63C6-CAF7-1E6EE8C1B17B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,36 +47,130 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\ISerializer.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\wsaReflectionExtensions.cs" />
+     <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Server\PlayFabServerInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabMultiplayerModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Server\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Groups\PlayFabGroupsModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabApiSettings.cs" />
+     <Compile Include="Assets\PlayFabSDK\Data\PlayFabDataAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsModels.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\UI\FoxCharacterDeathScreen.cs" />
+     <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminInstanceAPI.cs" />
+     <Compile Include="Assets\FoxAdventures\Game\Components\Sounds\SoundFX.cs" />
+     <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\Util.cs" />
+     <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabExperimentationAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabHTTP.cs" />
+     <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabMultiplayerAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Client\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\ISerializerPlugin.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Level\Win\Scripts\FoxCharacterWinScreen.cs" />
+     <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabUnityHttp.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Level\Win\Scripts\WinZone.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIJumpZone.cs" />
+     <Compile Include="Assets\PlayFabSDK\Server\PlayFabServerModels.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\WaypointFollower.cs" />
+     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabMultiplayerInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Models\PlayFabSharedSettings.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabDataGatherer.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginManager.cs" />
+     <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Admin\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\UI\FoxCharacterKeyCount.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabWWW.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterMovementAnimation.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\Log.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIStopZone.cs" />
+     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabErrors.cs" />
+     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabWebRequest.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\StickyMovingPlatform.cs" />
+     <Compile Include="Assets\PlayFabSDK\Localization\PlayFabLocalizationInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Profiles\PlayFabProfilesInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\UI\FoxCharacterJewelsCount.cs" />
+     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Profiles\PlayFabProfilesModels.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Health\Scripts\FoxCharacterHealth.cs" />
+     <Compile Include="Assets\PlayFabSDK\Localization\PlayFabLocalizationAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabLogger.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabAuthenticationContext.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\DeathZone.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIHeadRightZone.cs" />
+     <Compile Include="Assets\PlayFabSDK\Groups\PlayFabGroupsInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabExperimentationInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Enemies\Scripts\EnemyDamageZone.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\PlayFabSDK\Groups\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Enemies\Scripts\Frog.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\Jewels\Jewel.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Models\SharedModels.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Health\Scripts\UI\HealthView.cs" />
+     <Compile Include="Assets\PlayFabSDK\Data\PlayFabDataModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Profiles\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Localization\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Data\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Profiles\PlayFabProfilesAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\Key\Key.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\IPlayFabHttp.cs" />
+     <Compile Include="Assets\PlayFabSDK\Groups\PlayFabGroupsAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginContract.cs" />
+     <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Player\Scripts\FoxPlayer.cs" />
+     <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabSettings.cs" />
+     <Compile Include="Assets\PlayFabSDK\Server\PlayFabServerAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Insights\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabExperimentationModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginContractKey.cs" />
+     <Compile Include="Assets\PlayFabSDK\Client\PlayFabDeviceUtil.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Utils\Lerp2D.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\StartGameButton.cs" />
+     <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsInstanceAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerModels.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterControllerInput.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Internal\SimpleJson.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\ITransportPlugin.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterController.cs" />
+     <Compile Include="Assets\PlayFabSDK\Localization\PlayFabLocalizationModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Data\PlayFabDataInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\KeyLocked\DoorKeyLock.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\IPlayFabPlugin.cs" />
+     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Utils\FollowTransform.cs" />
+     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabEvents.cs" />
+     <Compile Include="Assets\PlayFabSDK\Entity\ScreenTimeTracker.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIFoxCharacterControllerInput.cs" />
+     <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsModels.cs" />
+     <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsAPI.cs" />
+     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\FoxCharacterInventory.cs" />
-     <Compile Include="Assets\FoxAdventures\Game\Components\Sounds\SoundFX.cs" />
+     <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientAPI.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\PlayfabAuth.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\PlayfabAuthPanel.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\PlayfabAuthPanelView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\Views\PlayfabAuthPanelViewLogin.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\Views\PlayfabAuthPanelViewRegister.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
+     <None Include="Assets\PlayFabSDK\link.xml" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -645,79 +739,79 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
