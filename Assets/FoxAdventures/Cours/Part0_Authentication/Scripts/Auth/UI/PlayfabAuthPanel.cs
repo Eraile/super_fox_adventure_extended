@@ -5,12 +5,9 @@ using UnityEngine;
 
 public class PlayfabAuthPanel : MonoBehaviour
 {
-
-    void Start()
-    {
-        //// Hide all
-        //this.HideAll();
-    }
+    // Root of views
+    public GameObject authenticatedUIRoot = null;
+    public GameObject loginUIRoot = null;
 
     void OnEnable()
     {
@@ -18,9 +15,13 @@ public class PlayfabAuthPanel : MonoBehaviour
         {
             // Show Login
             this.ShowLogin();
+
+            // Show all login views
+            this.ShowAll();
         }
         else
         {
+            // Hide login views
             this.HideAll();
         }
     }
@@ -28,11 +29,23 @@ public class PlayfabAuthPanel : MonoBehaviour
     // Show / Hide all
     public void ShowAll()
     {
-        this.gameObject.SetActive(true);
+        // Hide authenticated views
+        if (this.authenticatedUIRoot != null)
+            this.authenticatedUIRoot.SetActive(false);
+
+        // Show login views
+        if (this.loginUIRoot != null)
+            this.loginUIRoot.SetActive(true);
     }
     public void HideAll()
     {
-        this.gameObject.SetActive(false);
+        // Show authenticated views
+        if (this.authenticatedUIRoot != null)
+            this.authenticatedUIRoot.SetActive(true);
+
+        // Hide login views
+        if (this.loginUIRoot != null)
+            this.loginUIRoot.SetActive(false);
     }
 
     // Login

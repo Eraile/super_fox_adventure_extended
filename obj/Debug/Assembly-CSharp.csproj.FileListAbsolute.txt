@@ -1,2 +1,4 @@
 D:\Projects\Cours\CyTech\cours2\super_fox_adventure\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
 D:\Projects\Cours\CyTech\cours2\super_fox_adventure\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Projects\Cours\CyTech\super_fox_adventure_extended_cours\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Projects\Cours\CyTech\super_fox_adventure_extended_cours\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -12,6 +12,12 @@ public class PlayfabAuthPanelViewLogin : PlayfabAuthPanelView
     [SerializeField] protected InputField inputFieldPassword = null;
     [SerializeField] protected Toggle toggleRemember = null;
 
+    // Editor only
+#if UNITY_EDITOR
+    [Header("Editor only")]
+    public bool automaticLogin = false;
+#endif
+
 
     void OnEnable()
     {
@@ -29,6 +35,16 @@ public class PlayfabAuthPanelViewLogin : PlayfabAuthPanelView
                     this.inputFieldPassword.text = PlayerPrefs.GetString(PlayfabAuth.PlayfabAuthPlayerPrefsKeyPassword);
             }
         }
+
+#if UNITY_EDITOR
+        this.TryLogin();
+#endif
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) == true)
+            this.TryLogin();
     }
 
     public void OnLoginButtonClicked()

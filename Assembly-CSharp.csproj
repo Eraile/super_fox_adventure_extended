@@ -63,6 +63,7 @@
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabApiSettings.cs" />
      <Compile Include="Assets\PlayFabSDK\Data\PlayFabDataAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsModels.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\PlayfabAuth.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\UI\FoxCharacterDeathScreen.cs" />
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Sounds\SoundFX.cs" />
@@ -81,6 +82,7 @@
      <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabUnityHttp.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Level\Win\Scripts\WinZone.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\PlayfabAuthPanel.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIJumpZone.cs" />
      <Compile Include="Assets\PlayFabSDK\Server\PlayFabServerModels.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\WaypointFollower.cs" />
@@ -92,6 +94,7 @@
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\UI\FoxCharacterKeyCount.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabWWW.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\Views\PlayfabAuthPanelViewLogin.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterMovementAnimation.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\Log.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIStopZone.cs" />
@@ -110,6 +113,7 @@
      <Compile Include="Assets\PlayFabSDK\Localization\PlayFabLocalizationAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabLogger.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabAuthenticationContext.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\Views\PlayfabAuthPanelViewRegister.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\DeathZone.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIHeadRightZone.cs" />
      <Compile Include="Assets\PlayFabSDK\Groups\PlayFabGroupsInstanceAPI.cs" />
@@ -150,6 +154,7 @@
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\SimpleJson.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\ITransportPlugin.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterController.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\PlayfabAuthPanelView.cs" />
      <Compile Include="Assets\PlayFabSDK\Localization\PlayFabLocalizationModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Data\PlayFabDataInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\KeyLocked\DoorKeyLock.cs" />
@@ -164,11 +169,9 @@
      <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\FoxCharacterInventory.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientAPI.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\PlayfabAuth.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\PlayfabAuthPanel.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\PlayfabAuthPanelView.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\Views\PlayfabAuthPanelViewLogin.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part0_Authentication\Scripts\Auth\UI\Views\PlayfabAuthPanelViewRegister.cs" />
+     <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\QuitGameButton.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsViewCloseButton.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
      <None Include="Assets\PlayFabSDK\link.xml" />
  <Reference Include="UnityEngine">
