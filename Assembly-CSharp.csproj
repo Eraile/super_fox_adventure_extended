@@ -174,6 +174,10 @@
      <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsViewCloseButton.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\PlayerStatsView.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\FoxCharacterWinScreenAddCrystals.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\LeaderboardEntry.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\Leaderboard.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\LeaderboardView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\Win\FoxCharacterWinScreenLeaderboard.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
      <None Include="Assets\PlayFabSDK\link.xml" />
  <Reference Include="UnityEngine">

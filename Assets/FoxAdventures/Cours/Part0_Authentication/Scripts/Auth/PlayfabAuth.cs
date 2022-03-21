@@ -24,7 +24,8 @@ public static class PlayfabAuth
         RegisterPlayFabUserRequest registerPlayFabUserRequest = new RegisterPlayFabUserRequest()
         {
             Email = email,
-            Username = username.Replace("@", "_"),
+            Username = username,
+            DisplayName = username,
             Password = password,
         };
 
