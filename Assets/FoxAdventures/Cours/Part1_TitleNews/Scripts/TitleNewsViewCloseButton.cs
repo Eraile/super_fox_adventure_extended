@@ -39,7 +39,7 @@ public class TitleNewsViewCloseButton : MonoBehaviour
     {
         // Register to events
         if (this.CloseButton != null)
-            this.CloseButton.onClick.AddListener(this.OnCloseNewsClick);
+            this.CloseButton.onClick.RemoveListener(this.OnCloseNewsClick);
     }
 
     private void OnCloseNewsClick()

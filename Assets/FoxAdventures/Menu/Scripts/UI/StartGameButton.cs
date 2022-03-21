@@ -30,7 +30,7 @@ public class StartGameButton : MonoBehaviour
     {
         // Register to events
         if (this.StartButton != null)
-            this.StartButton.onClick.AddListener(this.OnStartGameClick);
+            this.StartButton.onClick.RemoveListener(this.OnStartGameClick);
     }
 
     private void OnStartGameClick()

@@ -11,13 +11,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/FoxAdventures/Cours/Part0_Authentication/Scene/Menu.unity
     guid: 952a82f4c5741f74baa3e1f6ab424876
-  - enabled: 1
+  - enabled: 0
     path: Assets/FoxAdventures/Cours/Part1_TitleNews/Scene/Menu.unity
     guid: bc2fa2ccd413b514494a725087974549
   - enabled: 0
+    path: Assets/FoxAdventures/Game/Scene/GameScene.unity
+    guid: 8117909b7d579db41b2556198cb4f7d0
+  - enabled: 1
     path: Assets/FoxAdventures/Cours/Part2_PlayerStatistics/Scene/Menu.unity
     guid: 6f8aa924e7e7f7945ae08b6e656d9b5c
   - enabled: 1
-    path: Assets/FoxAdventures/Game/Scene/GameScene.unity
-    guid: 8117909b7d579db41b2556198cb4f7d0
+    path: Assets/FoxAdventures/Cours/Part2_PlayerStatistics/Scene/GameScene.unity
+    guid: 8f0830b493ed2434a9e786ae9d9bdae8
   m_configObjects: {}

@@ -28,11 +28,15 @@ public class QuitGameButton : MonoBehaviour
     {
         // Register to events
         if (this.QuitButton != null)
-            this.QuitButton.onClick.AddListener(this.OnQuitGameClick);
+            this.QuitButton.onClick.RemoveListener(this.OnQuitGameClick);
     }
 
     private void OnQuitGameClick()
     {
+#if UNITY_EDITOR
+        Debug.LogError("QuitGameButton.OnQuitGameClick()");
+#else
         Application.Quit();
+#endif
     }
 }

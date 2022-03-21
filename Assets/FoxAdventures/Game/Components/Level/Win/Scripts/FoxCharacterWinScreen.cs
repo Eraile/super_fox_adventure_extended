@@ -24,7 +24,7 @@ public class FoxCharacterWinScreen : MonoBehaviour
     // View
     public Text levelResultsText = null;
 
-    void Awake()
+    protected virtual void Awake()
     {
         // Register to health events
         if (this.FoxPlayer != null)
@@ -38,14 +38,14 @@ public class FoxCharacterWinScreen : MonoBehaviour
     }
 
     // UI Events
-    public void OnWinButtonClicked()
+    public virtual void OnWinButtonClicked()
     {
         // Go back to Menu (first scene?)
         SceneManager.LoadScene(0);
     }
 
     // Events
-    public void OnWin()
+    protected virtual void OnWin()
     {
         // Update view
         if (this.levelResultsText != null && this.FoxPlayer != null)

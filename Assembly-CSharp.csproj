@@ -172,6 +172,8 @@
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\QuitGameButton.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsView.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsViewCloseButton.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\PlayerStatsView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\FoxCharacterWinScreenAddCrystals.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
      <None Include="Assets\PlayFabSDK\link.xml" />
  <Reference Include="UnityEngine">
