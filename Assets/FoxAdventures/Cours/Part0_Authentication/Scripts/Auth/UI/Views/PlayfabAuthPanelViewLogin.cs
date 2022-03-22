@@ -37,7 +37,8 @@ public class PlayfabAuthPanelViewLogin : PlayfabAuthPanelView
         }
 
 #if UNITY_EDITOR
-        this.TryLogin();
+        if (this.automaticLogin == true)
+            this.TryLogin();
 #endif
     }
 

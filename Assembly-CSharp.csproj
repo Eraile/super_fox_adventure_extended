@@ -47,15 +47,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\LeaderboardEntry.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\ISerializer.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\wsaReflectionExtensions.cs" />
      <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Server\PlayFabServerInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabMultiplayerModels.cs" />
      <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabEvents.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\LeaderboardView.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\SingletonMonoBehaviour.cs" />
      <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Server\PlayFabEvents.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsViewCloseButton.cs" />
      <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationModels.cs" />
@@ -67,6 +70,9 @@
      <Compile Include="Assets\FoxAdventures\Game\Components\Death\UI\FoxCharacterDeathScreen.cs" />
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Sounds\SoundFX.cs" />
+     <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\QuitGameButton.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsView.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\FoxCharacterWinScreenAddCrystals.cs" />
      <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Internal\Util.cs" />
      <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyModels.cs" />
@@ -136,6 +142,7 @@
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginContract.cs" />
      <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Player\Scripts\FoxPlayer.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\PlayerStatsView.cs" />
      <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabSettings.cs" />
@@ -145,6 +152,7 @@
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginContractKey.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabDeviceUtil.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Utils\Lerp2D.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\Win\FoxCharacterWinScreenLeaderboard.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\StartGameButton.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsInstanceAPI.cs" />
@@ -164,20 +172,16 @@
      <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabEvents.cs" />
      <Compile Include="Assets\PlayFabSDK\Entity\ScreenTimeTracker.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\AI\MenuAIFoxCharacterControllerInput.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\Leaderboard.cs" />
      <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsModels.cs" />
      <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsAPI.cs" />
      <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\FoxCharacterInventory.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientAPI.cs" />
-     <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\QuitGameButton.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsView.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsViewCloseButton.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\PlayerStatsView.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\FoxCharacterWinScreenAddCrystals.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\LeaderboardEntry.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\Leaderboard.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\UI\LeaderboardView.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part3_Leaderboard\Scripts\Win\FoxCharacterWinScreenLeaderboard.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part4_Shop\Scripts\UI\Shop.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part4_Shop\Scripts\UI\Inventory.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part4_Shop\Scripts\UI\ShopEntry.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part4_Shop\Scripts\UI\ShopView.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
      <None Include="Assets\PlayFabSDK\link.xml" />
  <Reference Include="UnityEngine">

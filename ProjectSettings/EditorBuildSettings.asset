@@ -23,9 +23,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/FoxAdventures/Cours/Part2_PlayerStatistics/Scene/GameScene.unity
     guid: 8f0830b493ed2434a9e786ae9d9bdae8
-  - enabled: 1
+  - enabled: 0
     path: Assets/FoxAdventures/Cours/Part3_Leaderboard/Scene/Menu.unity
     guid: e133891f5c6c5c249bd57efa63a63842
+  - enabled: 1
+    path: Assets/FoxAdventures/Cours/Part4_Shop/Scenes/Menu.unity
+    guid: 854df358a3fb4224fa58232d354b12e4
   - enabled: 1
     path: Assets/FoxAdventures/Cours/Part3_Leaderboard/Scene/GameScene.unity
     guid: 8fb3c5ae968697244bf098e52abcd4aa
