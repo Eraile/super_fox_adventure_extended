@@ -2532,7 +2532,7 @@ MonoBehaviour:
   inputFieldEmail: {fileID: 455485724}
   inputFieldPassword: {fileID: 910409032}
   toggleRemember: {fileID: 1769431424}
-  automaticLogin: 1
+  automaticLogin: 0
 --- !u!1 &421385978
 GameObject:
   m_ObjectHideFlags: 0
@@ -11922,6 +11922,7 @@ MonoBehaviour:
   leaderboardName: level1_crystals
   leaderboardEntryPrefab: {fileID: 680830562}
   isFloatExpected: 0
+  isReversed: 0
 --- !u!1 &1646969518
 GameObject:
   m_ObjectHideFlags: 0
@@ -15911,6 +15912,7 @@ MonoBehaviour:
   leaderboardName: level1_speedrun
   leaderboardEntryPrefab: {fileID: 911190835}
   isFloatExpected: 1
+  isReversed: 1
 --- !u!1 &1887933468
 GameObject:
   m_ObjectHideFlags: 0

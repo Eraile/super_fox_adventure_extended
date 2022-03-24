@@ -103,7 +103,10 @@ public class ShopEntry : MonoBehaviour
 
                     // Update value
                     if (this.itemValueText != null)
-                        this.itemValueText.text = "OK";
+                    {
+                        //this.itemValueText.alignment = TextAnchor.MiddleCenter;
+                        this.itemValueText.text = "Owned";
+                    }
                 }
                 else
                 {
@@ -113,7 +116,10 @@ public class ShopEntry : MonoBehaviour
 
                     // Update value
                     if (this.itemValueText != null)
+                    {
+                        //this.itemValueText.alignment = TextAnchor.MiddleLeft;
                         this.itemValueText.text = itemPrice.ToString();
+                    }
                 }
             }
         }

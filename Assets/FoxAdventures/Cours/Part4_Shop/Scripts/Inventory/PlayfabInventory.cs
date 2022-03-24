@@ -59,6 +59,20 @@ public class PlayfabInventory : MonoBehaviour
         }
     }
 
+    private float nextUpdateInventory = 0.0f;
+    private const float UpdateInventoryEvery = 15.0f;
+    void Update()
+    {
+        if (this.nextUpdateInventory > 0.0f)
+            this.nextUpdateInventory -= Time.deltaTime;
+        
+        if (this.nextUpdateInventory <= 0.0f)
+        {
+            this.UpdateInventory();
+            this.nextUpdateInventory = PlayfabInventory.UpdateInventoryEvery;
+        }
+    }
+
     public void UpdateInventory()
     {
         // Trigger news show if logged in
@@ -66,11 +80,9 @@ public class PlayfabInventory : MonoBehaviour
         {
             PlayFabClientAPI.GetUserInventory(new GetUserInventoryRequest() { }, this.OnGetUserInventorySuccess, this.OnGetUserInventoryError);
         }
-        else
-        {
-            // Try to update inventory later on if not logged in
-            this.Invoke("UpdateInventory", 1.0f);
-        }
+
+        // Refresh
+        this.nextUpdateInventory = PlayfabInventory.UpdateInventoryEvery;
     }
 
     private void OnGetUserInventorySuccess(GetUserInventoryResult getUserInventoryResult)

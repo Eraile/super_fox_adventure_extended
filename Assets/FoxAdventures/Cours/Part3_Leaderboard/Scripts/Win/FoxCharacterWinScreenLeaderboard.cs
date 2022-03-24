@@ -27,7 +27,8 @@ public class FoxCharacterWinScreenLeaderboard : FoxCharacterWinScreenAddCrystals
             StatisticUpdate speedrunStatisticUpdate = new StatisticUpdate()
             {
                 StatisticName = "level1_speedrun",
-                Value = Mathf.FloorToInt(levelDuration * 100.0f),
+                Value = Mathf.FloorToInt(levelDuration * 100.0f * -1.0f),
+                // multiply the time by -1 because leaderboards in Playfab are always ranked as "more is best"
             };
 
             // Register leaderboard

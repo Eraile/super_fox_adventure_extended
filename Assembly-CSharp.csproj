@@ -71,6 +71,7 @@
      <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminInstanceAPI.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Sounds\SoundFX.cs" />
      <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\QuitGameButton.cs" />
+     <Compile Include="Assets\FoxAdventures\Cours\Part4_Shop\Scripts\Ingame\HigherJumpPowerup.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part1_TitleNews\Scripts\TitleNewsView.cs" />
      <Compile Include="Assets\FoxAdventures\Cours\Part2_PlayerStatistics\Scripts\FoxCharacterWinScreenAddCrystals.cs" />
      <Compile Include="Assets\PlayFabSDK\Matchmaker\PlayFabMatchmakerInstanceAPI.cs" />
@@ -183,7 +184,6 @@
      <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabEvents.cs" />
      <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\FoxCharacterInventory.cs" />
      <Compile Include="Assets\PlayFabSDK\Client\PlayFabClientAPI.cs" />
-     <Compile Include="Assets\FoxAdventures\Cours\Part4_Shop\Scripts\Ingame\HigherJumpPowerup.cs" />
      <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />
      <None Include="Assets\PlayFabSDK\link.xml" />
  <Reference Include="UnityEngine">

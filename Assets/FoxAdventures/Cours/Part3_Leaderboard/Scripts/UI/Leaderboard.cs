@@ -13,6 +13,7 @@ public class Leaderboard : MonoBehaviour
     private List<LeaderboardEntry> leaderboardEntries = new List<LeaderboardEntry>();
     //
     public bool isFloatExpected = false;
+    public bool isReversed = false;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -72,6 +73,10 @@ public class Leaderboard : MonoBehaviour
                         LeaderboardEntry leaderboardEntry = leaderboardEntryGameobjectCopy.GetComponent<LeaderboardEntry>();
                         if (leaderboardEntry != null)
                         {
+                            // Fix value
+                            if (isReversed == true)
+                                statValue *= -1;
+
                             // Set value
                             leaderboardEntry.SetValue(username, (isFloatExpected == true ? ((float)statValue / 100.0f).ToString("0.00") : statValue.ToString()));
 
