@@ -2532,7 +2532,7 @@ MonoBehaviour:
   inputFieldEmail: {fileID: 455485724}
   inputFieldPassword: {fileID: 910409032}
   toggleRemember: {fileID: 1769431424}
-  automaticLogin: 0
+  automaticLogin: 1
 --- !u!1 &421385978
 GameObject:
   m_ObjectHideFlags: 0
