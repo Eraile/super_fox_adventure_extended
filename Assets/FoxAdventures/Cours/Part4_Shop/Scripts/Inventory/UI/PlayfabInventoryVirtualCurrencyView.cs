@@ -17,6 +17,9 @@ public class PlayfabInventoryVirtualCurrencyView : MonoBehaviour
             // Register to events
             PlayfabInventory.Instance.OnInventoryUpdateSuccess.AddListener(this.OnInventoryUpdateSuccess);
             PlayfabInventory.Instance.OnInventoryUpdateError.AddListener(this.OnInventoryUpdateError);
+
+            // Ask inventory to update itself
+            PlayfabInventory.Instance.UpdateInventory();
         }
 
         //// Update view to init
@@ -66,7 +69,7 @@ public class PlayfabInventoryVirtualCurrencyView : MonoBehaviour
         // Get crystals from data
         if (PlayfabInventory.Instance != null && PlayfabInventory.Instance.VirtualCurrency != null && PlayfabInventory.Instance.VirtualCurrency.ContainsKey("CR") == true)
         {
-            crystalsCount = PlayfabInventory.Instance.VirtualCurrency["CR"];
+            crystalsCount = PlayfabInventory.Instance.VirtualCurrency[this.virtualCurrencyListing];
         }
 
         // Update crystals count
