@@ -656,86 +656,136 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.IK.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
- <Reference Include="PsdPlugin">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.IK.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Path.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Common.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics">
- <HintPath>C:/Projects/Cours/CyTech/super_fox_adventure_extended_cours/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{236A6082-DF70-63C6-CAF7-1E6EE8C1B17B}</Project>
       <Name>Assembly-CSharp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
+      <Project>{5EE84398-65F1-7C99-B509-72628D8B8D1B}</Project>
+      <Name>Unity.2D.IK.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
+      <Project>{C922B75D-06E2-25BB-A8C4-217B33C72773}</Project>
+      <Name>Unity.2D.Animation.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
+      <Project>{FE804A42-780C-C734-66BC-46070E845C48}</Project>
+      <Name>Unity.InternalAPIEngineBridge.001</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{7B2188FD-34BB-2A59-24A4-5E356572BFF3}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
+      <Project>{CA36ADD4-3D59-5097-3C9D-AD7AA7A984D8}</Project>
+      <Name>Unity.2D.PixelPerfect</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
+      <Project>{44A4E041-BD53-CF80-3656-F6EF8D6FA2F6}</Project>
+      <Name>Unity.2D.Tilemap.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="PsdPlugin.csproj">
+      <Project>{344343C0-7E6D-80CA-BC3A-1AB723FBCA20}</Project>
+      <Name>PsdPlugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
+      <Project>{E60F3030-263E-D54C-CE89-9ECD41EFE386}</Project>
+      <Name>Unity.2D.Animation.Triangle.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{0BFC471E-5963-4AE5-6B26-6CE665FF381F}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
+      <Project>{E79FC0B9-1D18-9E12-933D-D9EDA634C720}</Project>
+      <Name>Unity.2D.Animation.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.Editor.csproj">
+      <Project>{0257B440-41DD-B0E5-A372-4FFCD790CBA2}</Project>
+      <Name>Unity.2D.PixelPerfect.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{DB422737-D3AE-EA16-AF27-5AADB1EAD7D1}</Project>
+      <Name>Unity.TextMeshPro</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{B72C24AD-07A5-4383-71DF-7489BB2C0C6B}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
+      <Project>{B4FC4413-D4D2-7505-9244-F30E2103334C}</Project>
+      <Name>Unity.2D.Common.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
+      <Project>{10D3419F-0F84-CC14-B43E-007BE551684D}</Project>
+      <Name>Unity.2D.IK.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{C62E16F5-C256-B011-06D9-37266F4612B1}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Path.Editor.csproj">
+      <Project>{5856F701-56F6-A929-2182-24509D1BF50B}</Project>
+      <Name>Unity.2D.Path.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
+      <Project>{072EB766-AEED-A7D5-A3F7-645CB04CA457}</Project>
+      <Name>Unity.2D.SpriteShape.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{E0DF3289-79C7-A64F-EB3E-89EAC9DC012F}</Project>
+      <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
+      <Project>{C4C84613-67B7-8AFB-B4E5-BE7655C28229}</Project>
+      <Name>Unity.2D.Common.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
+      <Project>{51166184-9A99-7BE4-2C79-8F96096EF86F}</Project>
+      <Name>Unity.2D.Psdimporter.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{5C7AA10A-B579-D786-C5EF-133E457A1C73}</Project>
+      <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{CE28F6E2-43E7-D92F-AF96-90E4FDE2A104}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
+      <Project>{AA3455E0-E988-D409-9852-96E18E4E1E2D}</Project>
+      <Name>Unity.2D.SpriteShape.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{34CA29D6-1E45-7A5E-E664-313C3435B7C5}</Project>
+      <Name>Unity.Mathematics</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
