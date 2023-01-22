@@ -140,11 +140,12 @@ public class FoxPlayer : MonoBehaviour
                 Rigidbody2D rigidbody2D = this.FoxCharacterController.GetComponent<Rigidbody2D>();
                 if (rigidbody2D != null)
                 {
-                    // Do not be affected by physics anymore
-                    rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+                    //// Do not be affected by physics anymore
+                    //rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
 
                     // Reset the velocity
                     rigidbody2D.velocity = Vector2.zero;
+                    rigidbody2D.AddForce(Vector2.up * 18f, ForceMode2D.Impulse);
                 }
             }
         }

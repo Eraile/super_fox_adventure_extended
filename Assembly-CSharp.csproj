@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FoxAdventures\Game\Components\Enemies\Scripts\PlayerGetHitBehaviour.cs" />
     <Compile Include="Assets\FoxAdventures\Game\Components\Death\UI\FoxCharacterDeathScreen.cs" />
     <Compile Include="Assets\FoxAdventures\Game\Components\Level\Win\Scripts\FoxCharacterWinScreen.cs" />
     <Compile Include="Assets\FoxAdventures\Game\Components\Platforms\Scripts\WaypointFollower.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="Assets\FoxAdventures\Menu\Scripts\UI\StartGameButton.cs" />
     <Compile Include="Assets\FoxAdventures\Game\Components\CharacterController\FoxCharacterControllerInput.cs" />
     <Compile Include="Assets\FoxAdventures\Game\Components\Inventory\Scripts\KeyLocked\DoorKeyLock.cs" />
-    <Compile Include="Assets\FoxAdventures\Game\Components\Enemies\Scripts\PlayerGetHitBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FoxAdventures\Game\Components\UI\Fonts\8-bit Arcade.txt" />

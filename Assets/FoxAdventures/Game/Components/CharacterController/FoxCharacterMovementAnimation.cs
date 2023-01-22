@@ -11,8 +11,20 @@ public class FoxCharacterMovementAnimation : MonoBehaviour
         get
         {
             if (this.__foxCharacterController == null)
-                this.__foxCharacterController = this.GetComponent<FoxCharacterController>();
+                this.__foxCharacterController = this.GetComponentInParent<FoxCharacterController>();
             return this.__foxCharacterController;
+        }
+    }
+
+    // Player Health
+    private FoxCharacterHealth __foxCharacterHealth = null;
+    public FoxCharacterHealth FoxCharacterHealth
+    {
+        get
+        {
+            if (this.__foxCharacterHealth == null)
+                this.__foxCharacterHealth = this.GetComponentInParent<FoxCharacterHealth>();
+            return this.__foxCharacterHealth;
         }
     }
 
@@ -49,6 +61,12 @@ public class FoxCharacterMovementAnimation : MonoBehaviour
             this.Animator.SetFloat("Horizontal", Mathf.Abs(this.FoxCharacterController.horizontalInput));
             //this.Animator.SetFloat("Horizontal", Mathf.Abs(this.Rigidbody2D.velocity.x) / this.FoxCharacterController.moveSpeedFactor);
             this.Animator.SetFloat("Vertical", this.Rigidbody2D.velocity.y);
+        }
+
+        // Health
+        if (this.FoxCharacterHealth != null)
+        {
+            this.Animator.SetBool("IsDead", this.FoxCharacterHealth.IsDead);
         }
     }
 }

@@ -46,8 +46,35 @@ public class PlayerGetHitBehaviour : MonoBehaviour
                 }
             }
         }
+
+        UpdateInvincibilityView();
     }
 
+    public float invincibilityInvisibleRefreshRate = 0.1f;
+    private float invincibilityInvisibleTime = 0f;
+    [SerializeField] private SpriteRenderer spriteRenderer = null;
+    private void UpdateInvincibilityView()
+    {
+        if (this.spriteRenderer == null)
+            return;
+
+        if (this.IsInvincible == true)
+        {
+            this.invincibilityInvisibleTime -= Time.deltaTime;
+            if (this.invincibilityInvisibleTime < 0f)
+            {
+                this.invincibilityInvisibleTime += invincibilityInvisibleRefreshRate;
+                this.spriteRenderer.enabled = !this.spriteRenderer.enabled;
+            }
+        }
+        else
+        {
+            if (this.spriteRenderer.enabled == false)
+                this.spriteRenderer.enabled = true;
+        }
+    }
+
+    [SerializeField] private AudioSource getHitAudioSource = null;
     public void GetHit(EnemyDamageZone enemyDamageZone)
     {
         if (this.isInvincible == false && enemyDamageZone != null)
@@ -75,6 +102,10 @@ public class PlayerGetHitBehaviour : MonoBehaviour
             // Reset flag
             hasTouchedGround = false;
             canStartInvicibilityTimer = false;
+
+            // Audio
+            if (this.getHitAudioSource != null)
+                this.getHitAudioSource.PlayOneShot(this.getHitAudioSource.clip);
 
             // Wait some timer
             this.Invoke("StartInvicibilityTimer", 0.45f);

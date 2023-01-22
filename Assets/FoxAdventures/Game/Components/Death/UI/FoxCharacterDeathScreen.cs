@@ -43,12 +43,19 @@ public class FoxCharacterDeathScreen : MonoBehaviour
     // Events
     public void OnDead()
     {
-        if (this.deathScreenRoot != null)
-            this.deathScreenRoot.gameObject.SetActive(true);
+        // Call later
+        this.Invoke("ShowDeadScreen", 1.2f);
     }
     public void OnRevive()
     {
         if (this.deathScreenRoot != null)
             this.deathScreenRoot.gameObject.SetActive(false);
+    }
+
+    // Events - Callback
+    public void ShowDeadScreen()
+    {
+        if (this.deathScreenRoot != null)
+            this.deathScreenRoot.gameObject.SetActive(true);
     }
 }
