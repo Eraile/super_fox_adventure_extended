@@ -9,6 +9,9 @@ public class FoxCharacterController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        // Etape 0 - Update physics status
+        this.UpdateGroundedStatus();
+
         // Etape 1 - Mouvement Horizontal
         this.HandleHorizontalMove();
 
@@ -45,9 +48,15 @@ public class FoxCharacterController : MonoBehaviour
     public bool jump = false;
     public bool crouch = false;
 
+    // Can control ?
+    public bool canControl = true;
+
     //
     private void HandleHorizontalMove()
     {
+        if (this.canControl == false)
+            return;
+
         //// Etape 4 - Add conditions to the movement
         //if (this.isGrounded == true || this.airControl == true)
         {
@@ -59,13 +68,25 @@ public class FoxCharacterController : MonoBehaviour
                 targetVelocity.x *= 0.5f;
 
             // And then smoothing it out and applying it to the character
-            this.Rigidbody2D.velocity = Vector3.SmoothDamp(this.Rigidbody2D.velocity, targetVelocity, ref velocity, this.moveDampFactor);
+            //this.Rigidbody2D.velocity = Vector3.SmoothDamp(this.Rigidbody2D.velocity, targetVelocity, ref velocity, this.moveDampFactor);
+            this.Rigidbody2D.velocity = targetVelocity;
         }
     }
     #endregion
 
     #region Etape 2 - Flip Texture suivant orientation
     private bool __FacingRight = true;
+    //
+    private SpriteRenderer spriteRenderer = null;
+    public SpriteRenderer SpriteRenderer
+    {
+        get
+        {
+            if (this.spriteRenderer == null)
+                this.spriteRenderer = this.GetComponent<SpriteRenderer>();
+            return this.spriteRenderer;
+        }
+    }
 
     private void HandleFlip()
     {
@@ -88,12 +109,15 @@ public class FoxCharacterController : MonoBehaviour
         // Switch the way the player is labelled as facing.
         __FacingRight = !__FacingRight;
 
-        // Multiply the player's x local scale by -1.
-        Vector3 invertedScale = transform.localScale;
-        invertedScale.x *= -1;
+        //// Multiply the player's x local scale by -1.
+        //Vector3 invertedScale = transform.localScale;
+        //invertedScale.x *= -1;
 
-        // Apply
-        transform.localScale = invertedScale;
+        //// Apply
+        //transform.localScale = invertedScale;
+
+        if (this.SpriteRenderer != null)
+            this.SpriteRenderer.flipX = (__FacingRight == false);
     }
     #endregion
 
@@ -125,7 +149,7 @@ public class FoxCharacterController : MonoBehaviour
     [Header("Jump - Audio")]
     public AudioSource jumpAudioSource = null;
 
-    private void HandleJump()
+    private void UpdateGroundedStatus()
     {
         // Check values
         if (this.groundCheck == null)
@@ -145,6 +169,13 @@ public class FoxCharacterController : MonoBehaviour
                     __isGrounded = true;
             }
         }
+    }
+
+    private void HandleJump()
+    {
+        // Can control?
+        if (this.canControl == false)
+            return;
 
         // If the player should jump
         if (__isGrounded == true)
